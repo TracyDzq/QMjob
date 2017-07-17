@@ -1,0 +1,155 @@
+@charset "utf-8";
+$main: #f8b600;
+.part-title{
+    color: #242424;
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+}
+.part-info{
+    color: #242424;
+    text-align: center;
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 30px;
+}
+/* 首页开始 */
+.home{
+    .header{
+        border-bottom:none;
+        background: url("../img/home_01.jpg") center no-repeat;
+        .nav{
+            li{
+                float:left;
+                a{
+                    color: #fff;
+                    line-height: 46px;
+                    &:hover{
+                        color: $main;
+                    }
+                }
+                &.active{
+                    a{
+                        color:$main;
+                    }   
+                }
+            }
+        }
+        .log-reg{
+            color: #fff;
+            a{
+                color: #fff;
+                &:hover{
+                    color: $main;
+                }
+            }
+        }
+    }
+    .banner-box{
+        height: 579px;
+        background: url("../img/home_02.jpg") center no-repeat;
+        .banner-wrap{
+            position: relative;
+            width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+            .banner-content{
+                position: absolute;
+                left: 0;
+                top: 152px;
+                color:#fff;
+                h1{
+                    font-size: 36px;
+                    line-height: 72px;
+                }
+                p{
+                    font-size: 24px;
+                    line-height: 44px;
+                }
+                .btn_md{
+                    margin-top: 38px;
+                }
+            }
+        }
+    }
+    .part{
+        &.part1{
+            .part-content{
+                padding-top: 68px;
+                .l-pic{
+                    padding-left: 252px;
+                }
+                .r-content{
+                    padding-left: 62px;
+                    padding-top: 27px;
+                    li{
+                        display: flex;
+                        align-items:center;
+                        margin-bottom: 42px;
+                        img{
+                            margin-right:17px;
+                        }
+                        h4{
+                            font-size: 18px;
+                            color:#242424;
+                            line-height: 30px;
+                        }
+                        p{
+                            font-size: 14px;
+                            color:#666666;
+                            line-height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+        &.part2{
+            background-color: #f1f6f8;
+            .part2-list{
+                margin: 0 auto 67px;
+                width: 1200px;
+                display: flex;
+                justify-content:space-between;
+                .tab-i{
+                    color: #666;
+                    font-size: 18px;
+                    width: 127px;
+                    line-height: 45px;
+                    border: 1px solid #bfbfbf;
+                    border-radius: 23px;
+                    text-align: center;
+                    &.on{
+                        color: #fff;
+                        border: 1px solid $main;
+                        background-color: $main;
+                    }
+                }
+            }
+        }
+        &.part3{
+            ul{
+                margin-top:70px;
+                display: flex;
+                justify-content:space-between;
+                li{
+
+                    height: 358px;
+                    flex-basis:280px;
+                    border: 1px solid #ebebeb;  
+                }
+                h4{
+                    padding: 0 36px 0 18px;
+                    font-size: 18px;
+                    line-height: 72px;
+                    color: #242424;
+                }
+                p{
+                    padding: 0 36px 0 18px;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #666;
+                }
+            }
+        }
+    }
+}
