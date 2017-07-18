@@ -5,17 +5,19 @@
 	 	<a href="http://www.dinghuo1000.cn/" class="l">
 	  		<img src="../img/logo_white.png" alt="">
 	  	</a>
-	  	<ul class="l nav clear">
-	  		<li class="active"><a href="http://www.dinghuo1000.cn/" target="_blank">首页</a></li>
-	  		<li><a href="/products" target="_blank">产品介绍</a></li>
-	  		<li><a href="/cases" target="_blank">客户案例</a></li>
-	  		<li><a href="/about" target="_blank">关于我们</a></li>
-	  	</ul>
-	  	<div class="log-reg r">
-	  		<a href="https://www.1000.com/" target="_blank">登录</a>
-			<span>|</span>
-			<a href="https://www.1000.com/reg?us=dinghuo1000-head" target="_blank">注册</a>	
-	  	</div>
+	  	<div class="clear r">
+		  	<ul class="l nav clear">
+		  		<li class="active"><a href="http://www.dinghuo1000.cn/" target="_blank">首页</a></li>
+		  		<li><a href="/products" target="_blank">产品介绍</a></li>
+		  		<li><a href="/cases" target="_blank">客户案例</a></li>
+		  		<li><a href="/about" target="_blank">关于我们</a></li>
+		  	</ul>
+		  	<div class="log-reg r">
+		  		<a href="https://www.1000.com/" target="_blank">登录</a>
+				<span>|</span>
+				<a href="https://www.1000.com/reg?us=dinghuo1000-head" target="_blank">注册</a>	
+		  	</div>
+		</div>
 	 </div>
 	</header>
 
@@ -72,18 +74,68 @@
 			</ul>
 		</div>
 	</section>
-	<section class="part part2 pt100 pb100">
-		<ul class="part2-list" id="tab">
-			<li class="tab-i on">老板</li>
-			<li class="tab-i">运营</li>
-			<li class="tab-i">订单及客服</li>
-			<li class="tab-i">客户经理</li>
-			<li class="tab-i">客户总监</li>
-			<li class="tab-i">采购</li>
-			<li class="tab-i">仓管</li>
-			<li class="tab-i">会计</li>
-		</ul>
-
+	<section class="part part2 pb100">
+		<div class="swiper-container part2-swiper" style="overflow: visible;">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="../img/home_30.jpg" alt="">
+					<h4>老板</h4>
+					<p>掌握企业经营概况、商品</p>
+					<p>动销及重点客户动态，科学管理员工。</p>
+					<a href="/detail" target="_blank" class="btn_sm">查看详情</a>
+				</div>
+				<div class="swiper-slide">
+					<img src="../img/home_31.jpg" alt="">
+					<h4>运营</h4>
+					<p>维护商品详情资料，负责</p>
+					<p>建站及营销活动，制定电商运营策略。</p>
+					<a href="/detail" target="_blank" class="btn_sm">查看详情</a>
+				</div>
+				<div class="swiper-slide">
+					<img src="../img/home_32.jpg" alt="">
+					<h4>订单及客服</h4>
+					<p>跟踪处理每日订单，保持</p>
+					<p>与客户间联系审核销售单、退货单信息</p>
+					<a href="/detail" target="_blank" class="btn_sm">查看详情</a>
+				</div>
+				<div class="swiper-slide">
+					<img src="../img/home_33.jpg" alt="">
+					<h4>客户经理</h4>
+					<p>维护客户资料与客情关系，针对客户</p>
+					<p>消费情况精准制定营销策略，快速成单</p>
+					<a href="/detail" target="_blank" class="btn_sm">查看详情</a>
+				</div>
+				<div class="swiper-slide">
+					<img src="../img/home_34.jpg" alt="">
+					<h4>客户总监</h4>
+					<p>掌握客户资料，管理销售团队</p>
+					<p>制定科学的销售目标，实时监控销售业绩</p>
+					<a href="/detail" target="_blank" class="btn_sm">查看详情</a>
+				</div>
+				<div class="swiper-slide">
+					<img src="../img/home_35.jpg" alt="">
+					<h4>采购</h4>
+					<p>负责企业的采购协同工作</p>
+					<p>具体包括缺货商采购、库存水平控制和供应商资料维护</p>
+					<a href="/detail" target="_blank" class="btn_sm">查看详情</a>
+				</div>
+				<div class="swiper-slide">
+					<img src="../img/home_36.jpg" alt="">
+					<h4>仓管</h4>
+					<p>负责处理每日出入库单，完成出库、入库作业</p>
+					<p>定期进行库存盘点、商品移位，确保账实相符</p>
+					<a href="/detail" target="_blank" class="btn_sm">查看详情</a>
+				</div>
+				<div class="swiper-slide">
+					<img src="../img/home_37.jpg" alt="">
+					<h4>会计</h4>
+					<p>负责客户资金加减款与积分、客户收款</p>
+					<p>及对账，管理客户发票</p>
+					<a href="/detail" target="_blank" class="btn_sm">查看详情</a>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
 	</section>
 	<section class="part part3 pt100">
 		<h3 class="part-title">他们为云订货代言</h3>
@@ -119,9 +171,23 @@
 	</section>
 <%- include('./blocks/_footer.html') %>
 <script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
-
+<script src="../js/swiper.min.js"></script>
 <script>
+    var content = ['老板','运营','订单及客服','客户经理','客户总监','采购','仓管','会计'];
+    	
+	var mySwiper6 = new Swiper('.part2-swiper', {
+		autoplay: false,
+		loop: true,
+		centeredSlides : true,
+		slidesPerView : 'auto',
+		pagination: '.swiper-pagination',
+		paginationClickable :true,
+		simulateTouch : false,
+		paginationBulletRender: function (swiper, index, className) {
+            return '<span class="' + className + '">' + content[index] + '</span>';
+        }
 
+	})
 </script>
 
 </body>
