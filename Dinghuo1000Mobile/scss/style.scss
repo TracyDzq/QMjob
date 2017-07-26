@@ -1,0 +1,328 @@
+@charset "utf-8";
+$main: #F8B600;
+$title: #242424;
+.banner{
+    width: 100%;
+}
+.banner{
+	text-align: center;
+	color: #fff;
+	h3{
+		font-size: 0.24rem;
+		line-height: .24rem;
+		margin-bottom: 0.16rem;
+		padding-top: 0.5rem;
+	}
+	p{
+		font-size:0.15rem;
+		line-height: 0.26rem; 
+	}
+	.btn-lg{
+		margin-top: 0.15rem;
+	}
+}
+.index{
+    .banner{
+        height: 4.345rem;
+        background: url('//web-img.qmimg.com/qianmicom/u/cms/qmwww2/201707/26110314kdxt.jpg') no-repeat;
+        background-size: 100% 100%;
+    }
+    .part{
+    	text-align: center;
+    	padding-bottom: 0.6rem;
+    	h3{
+    		font-size: 0.21rem;
+    		line-height: 0.21rem;
+    		padding-top: 0.55rem;
+    		color:$title;
+    	}
+    	.title-info{
+    		margin-top: 0.1rem;
+    		line-height: 0.12rem;
+    		color:#666;
+    	}
+    	.part-content{
+			text-align: left;
+			.content-item{
+				display: flex;
+				align-item: center;
+				margin-top: 0.3rem;
+				justify-content: flex-start;
+					.content-img{
+						flex: 1;
+						display: flex;
+						flex-direction: column;
+						justify-content:center;
+						img{
+						  	height: auto;
+							}
+						}
+					.content-text{					
+						flex: 1;
+						p{
+  						font-size: 0.12rem;
+					  	line-height: 0.18rem;
+					  	&.title{
+					  		font-size: 0.15rem;
+							line-height: 0.34rem;
+					  	}
+  					}
+				}  					
+			}			
+		}
+    	&.part-1{
+    		background-color: #fff;
+    		.part-content{
+    			.content-item{
+  					.content-img{
+  						img{
+  							width: 0.79rem;
+						  	margin-left: 0.78rem;
+  						}
+  					}
+  					.content-text{
+  						p{
+						  	color: #666;
+						  	&.title{
+								color: $title;
+						  	}
+	  					}
+  					}  					
+    			}			
+    		}
+    	}
+    	&.part-2{
+    		background-color: #288ae6;
+    		h3{
+	    		color:#fff;
+	    	}
+	    	.title-info{
+	    		color:#fff;
+	    	}
+    		.part-content{
+    			.content-item{
+  					.content-img{
+  						flex:4;
+  						img{
+  							width: 0.79rem;
+						  	margin-left: 0.5rem;
+  						}
+  					}
+  					.content-text{
+  						flex:6;
+  						p{
+  							padding-right: 0.3rem;
+						  	color: #fff;
+						  	&.title{
+								color: #fff;
+						  	}
+	  					}
+  					}  					
+    			}			
+    		}
+    	}
+    	&.part-3{
+    		background-color: #f1f6f8;
+    		.swiper-container {
+    			margin-top: 0.3rem;
+			  text-align: center;
+			  .swiper-slide {
+				  background-color: #fff;
+				  margin-left: 0.19rem;
+				  width: 2.865rem;
+				  padding-bottom: 0.46rem;
+				  img {
+					  display: block;
+					  width: 2.865rem;
+					  height: auto;
+					  margin-bottom: 0.1rem;
+					}
+					 p {
+					  font-size: 0.12rem;
+					  line-height: 0.18rem;
+					  color: #666;
+					  &.title {
+						  margin-top: 0.19rem;
+						  font-size: 0.15rem;
+						  line-height: 0.43rem;
+						  color: #242426;
+						}
+					}
+					.btn-md {
+					  margin: 0.44rem auto 0;
+					  &.btn2{
+					  	margin: 0.26rem auto 0;
+					  }
+					}
+				}
+			}
+    	}
+    }
+}
+
+.products{
+    .banner{
+        height: 2.14rem;
+        background: url('//web-img.qmimg.com/qianmicom/u/cms/mqianmi2/201707/26162638gg3w.jpg') no-repeat;
+        background-size: 100% 100%;
+    }
+    .part{
+    	.content{
+    		width: 2.05rem;
+    		margin: 0 auto;
+    		h4{
+    			font-size: 0.18rem;
+    			margin-bottom: 0.07rem;
+    			line-height: .18rem;
+    			padding-left: 0.22rem;
+    		}
+    		p{
+    			font-size: .12rem;
+    			line-height: .18rem;
+    		}
+			.content-top{
+				h4{
+					background: url('//web-img.qmimg.com/qianmicom/u/cms/mqianmi2/201707/26164431a7sh.png') left center no-repeat;					
+					background-size: 0.225rem auto;
+				}
+				margin-bottom: 0.17rem;
+			}
+			.content-bottom{
+				h4{
+					background: url('//web-img.qmimg.com/qianmicom/u/cms/mqianmi2/201707/26164523lrqu.png') left center no-repeat;					
+					background-size: 0.225rem auto;
+				}
+				margin-bottom: 0.17rem;
+			}
+    	}
+    	h3{
+    		padding: 0.5rem 0 0.3rem;
+    		font-size: 0.21rem;
+    		line-height: 0.21rem;
+    	}
+    	&.part-dark{
+    		h3,h4{
+    			color:$title;
+    		}
+    		p{
+    			color: #666;
+    		}
+    		background-color: #fff;
+    	}
+    	&.part-light{
+    		h3,h4,p{
+    			color:#fff;
+    		}
+    		&.part-light-1{
+    			background-color: #28a1e6;
+    		}
+    		&.part-light-2{
+    			background-color: #4079f0;
+    		}
+    		&.part-light-3{
+    			background: -webkit-linear-gradient(left bottom, #f8de03 , #feb043); /* Safari 5.1 - 6.0 */
+                background: -o-linear-gradient(top right, #f8de03, #feb043); /* Opera 11.1 - 12.0 */
+                background: -moz-linear-gradient(top right, #f8de03, #feb043); /* Firefox 3.6 - 15 */
+                background: linear-gradient(to top right, #f8de03 , #feb043); /* 标准的语法 */
+    		}
+    	}
+    	.part-img{
+    		display: block;;
+    		margin: 0 auto;
+    		&.part-img-1{
+				width: 2.035rem;
+    		}
+    		&.part-img-2{
+				width: 2.585rem;
+    		}
+    		&.part-img-3{
+				width: 2.455rem;
+    		}
+    		&.part-img-4{
+				width: 1.715rem;
+    		}
+    		&.part-img-5{
+				width: 2.555rem;
+    		}
+    	}
+    }
+}
+.cases{
+	background-color: #f1f6f8;
+    .banner{
+        height: 2.14rem;
+        background: url('//web-img.qmimg.com/qianmicom/u/cms/mqianmi2/201707/26180203liyy.jpg') no-repeat;
+        background-size: 100% 100%;
+    }
+    .part{
+    	width:3.125rem;
+    	margin: 0 auto; 
+    	h3{
+			padding: 0.5rem 0 0.3rem;
+			font-size: 0.21rem;
+			line-height: 0.21rem;
+			color: $title;
+			text-align: center;
+		}
+		h4{
+			font-size: 0.15rem;
+			color: $title;
+			line-height: .15rem;
+			margin-bottom: 0.12rem;
+		}
+		p{
+			padding: 0 0.17rem;	
+			line-height: 0.18rem;
+			color: #666;
+			&.spe{
+				color: $main;
+				margin-top: 0.10rem;
+			}
+			span{
+				font-weight: 700;
+			}
+		}
+		&.part-1{
+			.content-item{
+				margin-bottom: 0.3rem;
+				display: flex;
+				align-items:center;
+				background-color: #fff;
+				img{
+					width: 1.07rem;
+					height: auto;
+				}
+				&:last-child{
+					margin-bottom: 0;
+				}
+				.content-info{
+					display: flex;
+					flex-direction: column;
+					text-align: center;
+				}
+			}
+		}
+		&.part-2{
+			padding-bottom: 0.35rem;
+			.content{
+				text-align: center;
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				.content-item{
+					margin-bottom: 0.15rem;
+					background-color: #fff;
+					padding-bottom: .20rem;
+					img{
+						width: 1.485rem;
+						height: auto;
+						margin-bottom: .20rem;
+					}
+					p{
+						padding: 0;
+					}
+				}
+			}	
+		}
+    }
+}
